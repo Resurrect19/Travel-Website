@@ -7,6 +7,7 @@
     <title>Travel Website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3d4bd2647f.js" crossorigin="anonymous"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@300;600;800;900&family=Poppins:ital,wght@0,300;0,400;1,800&family=Roboto:wght@300&family=Tapestry&family=Ubuntu:wght@300&display=swap'); </style>
 </head>
 <body>
     <header class="header">
@@ -19,9 +20,30 @@
                 <a href="destination.html">destination</a>
                 <a href="contact.html">contact</a>
             </nav>
+            <div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
         </section>
     </header>
     
+    --------home section start--------------
+    <div class="container home">
+        <section class="flex">
+
+            <form action="" method="post">
+                <h3>Search your Tour</h3>
+                <p>Where to</p>
+                <input type="text" name="location" required maxlength="50" placeholder="Enter Your location" class="box">
+                <p>When to</p>
+                <input type="date" name="date" class="box" required>
+                <p>How many</p>
+                <input type="number" name="guest" min="1" max="10" maxlength="2" placeholder="Number of guests" class="box" required>
+                <input type="submit" value="search tour" class="btn" name="search">
+
+
+            </form>
+
+        </section>
+    </div>
+    <!-- ----------home section end------------------ -->
     <script src="js/script.js"></script>
 </body>
 </html>

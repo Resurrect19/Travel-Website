@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --lavender: #cbbbe8;
+    --pink: #fecff3;
+    --blue:#a1eafb;
+    --skin: #fdfdfd81;
+    --brown:#3f3f3fb7;
+    --olive-green: #437a5b;
+    --grass: #b4cd93;
+    --yellow: #fbf587;
+    --grey: #bdbdbdaa;
+}
+html{
+    font-size: 67.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+
+*::selection{
+    background-color: var(--yellow);
+    color: black;
+}
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--skin);
+}
+body{
+    background-color: black;
+}
+.container{
+    padding-top: 10rem;
+}
+.btn{
+    display: block;
+    border-radius: .5rem;
+    background-color: var(--yellow);
+    color: black;
+    padding: 1.3rem 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+section{
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 100vw;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--brown);
+    z-index: 1000;
+}
+.header .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    color: var(--skin);
+    transition: all 0.2s linear;
+}
+.header .flex .navbar a:hover{
+    color: var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+
+
+#menu-btn{
+    font-size: 2rem;
+    color: var(--skin);
+    cursor: pointer;
+    display: none;
+}
+
+
+.home{
+    background: url('../images/beautiful-mountain-landscape.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .flex{
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .flex form{
+    background: var(--skin) ;
+    backdrop-filter: blur(.5rem);
+    padding: 2rem;
+    width: 50rem;
+    border-radius: .5rem;
+}
+.home .flex form h3{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: cursive;
+    text-align: center;
+}
+.home .flex form p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.847);
+}
+.home .flex form .box{
+    width: 100%;
+    background-color: var(--brown);
+    color: white;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    text-transform: none;
+}
+.home .flex form .box::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------media-query------------------------- */
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px){
+    
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .flex{
+        position: relative;
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top: 120%;
+       margin:  0 auto;
+        backdrop-filter: .4rem;
+        background-color: rgba(0, 0, 0, 0.621);
+        
+        border-radius: 2rem;
+        width: 95%;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: .2s linear;
+    }
+    .header .flex .navbar.active{
+        transform: scale(1);
+    }
+    .header .flex .navbar a{
+        display: block;
+        color: white;
+        font-size: 1.8rem;
+        padding: 1.5rem 1.5rem;
+        margin: .5rem 1rem;
+        font-weight: 500;
+        text-align: center;
+       border-radius: .5rem;
+        
+    }
+    .header .flex .navbar a:hover{
+        color: var(--yellow);
+        border-bottom: none;
+        background-color: rgba(255, 255, 255, 0.452);
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
