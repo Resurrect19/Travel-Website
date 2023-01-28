@@ -134,11 +134,12 @@ section{
     border-radius: .5rem;
 }
 .home .flex form h3{
-    font-size: 2rem;
-    color: white;
+    font-size: 3rem;
+    color: black;
     margin-bottom: 1rem;
-    font-family: cursive;
+    
     text-align: center;
+    text-transform: uppercase;
 }
 .home .flex form p{
     font-size: 1.8rem;
