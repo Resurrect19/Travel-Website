@@ -7,7 +7,7 @@
     text-transform: capitalize;
     outline: none;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
 }
 :root{
     --lavender: #cbbbe8;
@@ -160,12 +160,49 @@ section{
     color: rgba(255, 255, 255, 0.61);
 }
 
+.about{
+    background: url('../images/top-view-many-boats-traveling.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about .details{
+    background: url('../images/img-4.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: auto 15rem;
+    min-height: 60vh;
+   
+}
+.about .details .box{
+    width: 70%;
+    background: var(--skin);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: 0.5rem;
+}
+.about .details .box h3{
+    padding: 1rem;
+    font-size: 2rem;
 
-
-
-
-
-
+}
+.about .details .box p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: rgb(28, 26, 26);
+}
+.about .details .box .btn{
+    width: 30%;
+    display: inline-block;
+}
 
 
 
