@@ -337,6 +337,31 @@ section{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------media-query------------------------- */
 
 
@@ -393,6 +418,24 @@ section{
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+    .heading{
+        font-size: 5rem;
+    }
+    .about .details{
+        min-width: 30rem;
+        margin: auto;
+    }
+    .about .grid .box{
+        margin: auto;
+        min-width: 35rem;
+    }
+    .review .grid{
+        margin: auto;
+    }
+    .review .grid .box{
+        margin: auto;
+        min-width: 40rem;
     }
     
 }
