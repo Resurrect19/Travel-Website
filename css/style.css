@@ -48,6 +48,16 @@ body{
 .container{
     padding-top: 10rem;
 }
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color: var(--lavender);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color:rgba(0, 0, 0, 0.432);
+    padding: 2rem;
+}
 .btn{
     display: block;
     border-radius: .5rem;
@@ -119,6 +129,7 @@ section{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-blend-mode: multiply;
 }
 .home .flex{
     min-height: calc(100vh - 10rem);
@@ -166,7 +177,7 @@ section{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    
+    background-blend-mode: multiply;
 }
 .about .details{
     background: url('../images/img-4.jpg') no-repeat rgba(0,0,0,.5);
@@ -249,15 +260,61 @@ section{
 .about .grid .box img:hover{
     transform: scale(1.015);
 }
+.review{
+    background: url('../images/beautiful-mountain-landscape.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem;
+    background-blend-mode: multiply;
+}
+.review .grid{
+      
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    
+}
+.review .grid .box img{
+    width: 30rem;
+    height: 30rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
 
-
-
-
-
-
-
-
-
+.review .grid .box{
+    background-color: var(--skin);
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(0.1rem);
+    border-radius: .5rem;
+    transition: all 0.5s ease;
+    max-width: 37rem;
+    margin: auto 4rem;
+}
+.review .grid .box h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.review .grid .box p{
+    font-size: 1.3rem;
+    line-height: 2;
+}
+.review .grid .box .stars{
+    font-size: 2rem;
+}
+.review .grid .box:hover{
+    background-color: var(--brown);
+}
+.review .grid .box img:hover{
+    transform: scale(1.015);
+}
 
 
 
