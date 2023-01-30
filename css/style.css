@@ -51,11 +51,11 @@ body{
 .heading{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 7rem;
-    color: var(--lavender);
+    color: white;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 4rem;
-    background-color:rgba(0, 0, 0, 0.432);
+    
     padding: 2rem;
 }
 .btn{
@@ -89,7 +89,7 @@ section{
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--brown);
+    background-color: rgba(0, 0, 0, 0.614);
     z-index: 1000;
 }
 .header .flex{
@@ -315,11 +315,72 @@ section{
 .review .grid .box img:hover{
     transform: scale(1.015);
 }
+.tours{
+    background: url('../images/beautiful-mountain-landscape (1).jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem;
+    background-blend-mode: multiply;
+}
+.tours .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tours .grid .box{
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(0.1rem);
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+    max-width: 40rem;
+    margin: auto 3rem;
+    position: relative;
+}
+.tours .grid .box .price{
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.608);
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    color: wheat;
 
-
-
-
-
+}
+.tours .grid .box .price i{
+    color: var(--yellow);
+    margin-right: 1rem;
+}
+.tours .grid .box img{
+    width: 35rem;
+    height: 35rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.tours .grid .box .name{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 200;
+}
+.tours .grid .box .address{
+    font-size: 1.7rem;
+    color: rgb(136, 136, 136);
+    line-height: 2;
+}
+.tours .grid .box:hover{
+    background-color: rgba(0, 0, 0, 0.918);
+}
+.tours .grid .box:hover .price{
+    background-color: rgba(0, 0, 0, 0.868);
+}
 
 
 
