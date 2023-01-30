@@ -381,7 +381,14 @@ section{
 .tours .grid .box:hover .price{
     background-color: rgba(0, 0, 0, 0.868);
 }
-
+.destinations{
+    background: url('../images/img-8.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem;
+    background-blend-mode: multiply;
+}
 
 
 
