@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3d4bd2647f.js" crossorigin="anonymous"></script>
     <style> @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@300;600;800;900&family=Poppins:ital,wght@0,300;0,400;1,800&family=Roboto:wght@300&family=Tapestry&family=Ubuntu:wght@300&display=swap'); </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <section class="flex">
             <a href="index.html" class="logo">Tourism</a>
             <nav class="navbar">
@@ -26,12 +27,12 @@
     <!-- --------------contact section starts--------------- -->
 
     <div class="container contact">
-        <h1 class="heading">Contact Us</h1>
+        <h1 class="heading" data-aos="zoom-out">Contact Us</h1>
         <section>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.45447153904!2d75.72376254061139!3d22.72391173042005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1675161208402!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <form action="" method="post">
+                <form action="" method="post" data-aos="zoom-in">
                     <h3>Get in Touch</h3>
                     <input type="text" name="name"  required-maxlength="50" placeholder="Enter your Name" class="box">
                     <input type="email" name="email" required-maxlength="50" placeholder="Enter your Email" class="box">
@@ -41,19 +42,19 @@
                 </form>
             </div>
             <div class="grid">
-                <div class="box">
+                <div class="box"  data-aos="fade-up">
                     <i class="fa-solid fa-phone"></i>
                     <h3>Phone Number</h3>
                     <a href="tel: 1234567890">+123-456-7890</a>
                     <a href="tel:1111222233">+111-122-2233</a>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up">
                     <i class="fa-solid fa-envelope"></i>
                     <h3>Email Address</h3>
                     <a href="resurrect19@gmail.com">resurrect19@gmail.com</a>
                     <a href="sushantsinghrajpoot21@gmail.com">sushantsinghrajpoot21@gmail.com</a>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up">
                     <i class="fa-solid fa-location-dot"></i>
                     <h3>Office Address</h3>
                     <a href="#">126, Suyog Parisar , Ratlam, Madhya Pradesh, pin - 457001                        
@@ -73,7 +74,7 @@
 
     <!-- -------------------contact section ends--------------- -->
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
